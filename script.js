@@ -6,20 +6,20 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Apesar da abolição da escravatura ter sido assinada há 131 anos, a sociedade brasileira continua perpetuando várias palavras e expressões em seu vocabulário que são carregadas de racismo. “Denegrir”, “meia-tigela”, “mulata”, “cabelo ruim” e “negra de traços finos” são alguns exemplos de uma lista que tornam o preconceito contra a cor da pele como algo natural e comum.",
+        enunciado: "Hoje é sua vez de fazer serviço de preto.",
         alternativas: [
             {
-                texto: "Não concordo!",
+                texto: "Para mim, não é racismo!",
                 afirmacao: "Você ainda acha que essas pequenas frases não tem nada de preconceituoso. "
             },
             {
-                texto: "Com certeza!",
-                afirmacao: "Você concorda que essas frases deveriam sim para de serem ditas, só para começar."
+                texto: "Racismo, com certeza!",
+                afirmacao: "Você concorda que essas frases deveriam sim parar de serem ditas, só para começar."
             }
         ]
     },
     {
-        enunciado: "Frase racista, você já ouviu ou falou uma hoje? Pode ser até mesmo aquela que seus entes queridos falam sem pensar?",
+        enunciado: "Amanhã é dia de branco",
         alternativas: [
             {
                 texto: " Sim, já ouvi ou falei, mas foi sem querer",
@@ -32,15 +32,15 @@ const perguntas = [
         ]
     },
     {
-        enunciado: "Você pode até acreditar que “não ver cor” é algo positivo, o problema é que quase sempre, as mesmas pessoas que não enxergam cores também não percebem quando estão sendo racistas.",
+        enunciado: "Serviço de preto.",
         alternativas: [
             {
-                texto: "Eu não enxergo cores",
+                texto: "Sim, já ouvi ou falei, mas foi sem querer",
                 afirmacao: "Em outras palavras, se fazer de cego não isenta você de ser racista."
             },
             {
-                texto: "Enxergo seres humanos.",
-                afirmacao: "enxergar diferenças nos permite reconhecer que justamente por não sermos iguais é que temos diferentes tratamentos socialmente."
+                texto: "Isso parece que nunca vai acabar.",
+                afirmacao: "Não dá para ser ingênuo e achar que não existe o teor racista, ainda mais quando associamos a outras dessas expressões que colocam o negro como o oposto de positivo."
             }
         ]
     },
@@ -53,20 +53,20 @@ const perguntas = [
             },
             {
                 texto: "Hoje em dia negros estão se posicionando.",
-                afirmacao: "Se você percebeu que agora nenhuma das suas “piadinhas” tem graça, a não ser quando está cercado de racistas reacionários iguais a você, significa que quem precisa se tratar urgentemente é você."
+                afirmacao: "Numa sociedade racista, não basta não ser racista. É necessário ser antirracista."
             }
         ]
     },
     {
-        enunciado: "Por que não tem dia da consciência humana? ",
+        enunciado: "Não sou tuas negas",
         alternativas: [
             {
-                texto: "O mês da consciência negra existe justamente para celebrar a morte de um dos maiores símbolos de resistência e luta contra o sistema escravocrata.",
-                afirmacao: " O mais intrigante é que estas pessoas normalmente pregam o discurso de que somos todos iguais, mas nunca questionam a ausência de negros em ambientes de destaque, universidades, histórias, televisão e etc."
+                texto: "Com as negras pode tudo.",
+                afirmacao: " O racismo ainda está conosco. Porém, cabe a nós preparar nossas crianças para o que elas têm que enfrentar e que, com esperança, nós vamos superar."
             },
             {
-                texto: "O mês de novembro é famoso por levantar questionamentos absurdos acerca da celebração do povo preto (lê se recalque, ódio e racismo enrustido).",
-                afirmacao: " O mais intrigante é que estas pessoas normalmente pregam o discurso de que somos todos iguais, mas nunca questionam a ausência de negros em ambientes de destaque, universidades, histórias, televisão e etc.. "
+                texto: " É necessário ser antirracista.",
+                afirmacao: "Eu não sou racista. Estou contra toda forma de racismo e segregação, toda forma de discriminação. Eu acredito nos seres humanos, e que todos os seres humanos devem ser respeitados como tais, independentemente da sua cor."
             }
         ]
     },
@@ -105,7 +105,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Racismo para mim...";
+    caixaPerguntas.textContent = "Sobre essas frases racistas...";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
